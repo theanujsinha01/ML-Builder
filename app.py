@@ -211,3 +211,4 @@ if uploaded_file is not None:
                     st.download_button("Download Scaler", f, file_name="scaler.pkl")
         except Exception as e:
             st.error(f"Error in saving or downloading: {e}")
+
