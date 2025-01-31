@@ -3,6 +3,8 @@
 ## Overview
 ML Model Builder is a Streamlit-based web application that allows users to upload datasets, clean data, preprocess features, train regression models with hyperparameter tuning, and test the trained models with new data.
 
+https://ml-model-builder-app.streamlit.app/
+
 ## Features
 - Upload CSV or Excel datasets
 - Data cleaning (remove missing values, drop duplicates)
