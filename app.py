@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-# import joblib
+import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, MinMaxScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
@@ -192,23 +192,23 @@ if uploaded_file is not None:
             st.error(f"Error in processing input or prediction: {e}")
 
     # Save and Download Model and Preprocessor
-    # st.subheader("Save and Download Model and Preprocessor")
-    # if st.button("Save Model and Preprocessor"):
-    #     try:
-    #         joblib.dump(model, "model.pkl")
-    #         if transformer:
-    #             joblib.dump(transformer, "transformer.pkl")
-    #         if scaler:
-    #             joblib.dump(scaler, "scaler.pkl")
-    #         st.success("Model and preprocessor saved successfully!")
-    #         with open("model.pkl", "rb") as f:
-    #             st.download_button("Download Model", f, file_name="model.pkl")
-    #         if transformer:
-    #             with open("transformer.pkl", "rb") as f:
-    #                 st.download_button("Download Transformer", f, file_name="transformer.pkl")
-    #         if scaler:
-    #             with open("scaler.pkl", "rb") as f:
-    #                 st.download_button("Download Scaler", f, file_name="scaler.pkl")
-    #     except Exception as e:
-    #         st.error(f"Error in saving or downloading: {e}")
+    st.subheader("Save and Download Model and Preprocessor")
+    if st.button("Save Model and Preprocessor"):
+        try:
+            joblib.dump(model, "model.pkl")
+            if transformer:
+                joblib.dump(transformer, "transformer.pkl")
+            if scaler:
+                joblib.dump(scaler, "scaler.pkl")
+            st.success("Model and preprocessor saved successfully!")
+            with open("model.pkl", "rb") as f:
+                st.download_button("Download Model", f, file_name="model.pkl")
+            if transformer:
+                with open("transformer.pkl", "rb") as f:
+                    st.download_button("Download Transformer", f, file_name="transformer.pkl")
+            if scaler:
+                with open("scaler.pkl", "rb") as f:
+                    st.download_button("Download Scaler", f, file_name="scaler.pkl")
+        except Exception as e:
+            st.error(f"Error in saving or downloading: {e}")
 
