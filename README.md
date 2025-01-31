@@ -1,4 +1,4 @@
-readme_content = """# ML Model Builder
+# ML Model Builder
 
 ## Overview
 ML Model Builder is a Streamlit-based web application that allows users to upload datasets, clean data, preprocess features, train regression models with hyperparameter tuning, and test the trained models with new data.
