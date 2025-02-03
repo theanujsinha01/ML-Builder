@@ -5,6 +5,8 @@ ML Model Builder is a Streamlit-based web application that allows users to uploa
 
 https://ml-model-builder-app.streamlit.app/
 
+![](https://github.com/user-attachments/assets/ebd5c106-0293-4033-806f-85cb618d620c)
+
 ## Features
 - Upload CSV or Excel datasets
 - Data cleaning (remove missing values, drop duplicates)
