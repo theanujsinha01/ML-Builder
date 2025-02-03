@@ -74,15 +74,3 @@ pip install -r requirements.txt
 ## Contributing
 Feel free to fork the repository, make changes, and submit pull requests.
 
-## License
-This project is licensed under the MIT License.
-
-## Author
-Developed by [Your Name](https://github.com/your-username).
-"""
-
-# Writing the README file
-with open("README.md", "w") as f:
-    f.write(readme_content)
-
-print("README.md file has been created successfully!")
